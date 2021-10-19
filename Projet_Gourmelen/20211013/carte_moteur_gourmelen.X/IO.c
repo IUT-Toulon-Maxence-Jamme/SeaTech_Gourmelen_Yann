@@ -1,10 +1,3 @@
-/*
-
- * File:   IO.c
-
- */
-
-
 
 #include <xc.h>
 
@@ -47,7 +40,12 @@ void InitIO()
     
 
     // Moteurs 
-
+    
+    _TRISB14 = 0; // Moteur 1    
+    _TRISB15 = 0; // Moteur 2
+    
+    _TRISC6 = 0; // Moteur 1    
+    _TRISC7 = 0; // Moteur 2
 
 
     //********** Configuration des entrées : _TRISxx = 1 ********************************   
